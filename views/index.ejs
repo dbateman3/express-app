@@ -1,4 +1,11 @@
 <% include partials/header %>
+	<% if(errors) { %>
+		<ul>
+		<% errors.forEach(function(error) { %>
+			<li><%= error.msg %></li>
+		<% }) %>
+		</ul>
+	<% } %>
 	<form method="post" action="users/add">
 		<label>First Name</label>
 		<input type="text" name="first_name">
