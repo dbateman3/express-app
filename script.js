@@ -35,11 +35,18 @@ let users = [
 
 
 app.get('/', function(req, res) {
-	let title = "Hello there buddy";
 	res.render('index', {
 		title: 'Hello there buddy',
 		users: users
 	});
+});
+
+app.post('/users/add', function(req, res) {
+	let newUser = {
+		first_name: req.body.first_name;
+		last_name: req.body.last_name;
+	}
+	
 });
 
 app.listen(3000, function() {
