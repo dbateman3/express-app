@@ -11,9 +11,17 @@ let app = express();
 
 
 app.use(logger); */
+
+// View Engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 //body parser middleware
 app.use(bodyParser.json());
-app.use(body-parser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: false}));
+
+// Set static path
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
