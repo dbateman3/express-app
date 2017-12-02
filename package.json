@@ -1,0 +1,27 @@
+{
+  "name": "express-app",
+  "version": "0.1.0",
+  "description": "trying express",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbateman3/express-app.git"
+  },
+  "keywords": [
+    "express",
+    "idiot",
+    "learning"
+  ],
+  "author": "Dan Bateman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbateman3/express-app/issues"
+  },
+  "homepage": "https://github.com/dbateman3/express-app#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
