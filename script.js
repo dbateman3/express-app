@@ -23,10 +23,23 @@ app.use(bodyParser.urlencoded({extended: false}));
 // Set static path
 app.use(express.static(path.join(__dirname, 'public')));
 
+let users = [
+	{
+		first_name: 'Dan',
+		last_name: 'Bateman',
+		age: 30
+
+	}
+];
+
 
 
 app.get('/', function(req, res) {
-	res.send('Hello World');
+	let title = "Hello there buddy";
+	res.render('index', {
+		title: 'Hello there buddy',
+		users: users
+	});
 });
 
 app.listen(3000, function() {
